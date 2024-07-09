@@ -1,7 +1,6 @@
 version: '3.8'
 services:
   backend:
-    container_name: backend1
     image: amanlath643/node_application:latest 
     ports: 
     - "3000:3000"
