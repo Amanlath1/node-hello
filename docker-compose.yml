@@ -2,23 +2,6 @@ version: '3.8'
 services:
   backend:
     container_name: backend1
-    image: amanlath643/node_sample:latest 
+    image: amanlath643/node_application:latest 
     ports: 
     - "3000:3000"
-    networks:
-      - node-networks
-
-  db:
-    image: mongo:4.2.1-bionic
-
-    ports:
-    - "27017:27017"
-    networks:
-      - node-networks
-
-  
-
-networks:
-  node-networks:
-    driver: bridge
-  
